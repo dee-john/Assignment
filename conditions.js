@@ -1,12 +1,12 @@
 let score = 75;
 
 // if statement
-if (score >= 90) {
+if (score >= 75) {
     console.log("Excellent");
 }
 
-// else if state
-else if(score >= 60) {
+// else if statement
+else if(score >= 50) {
     console.log("Good job");
 }
 

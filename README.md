@@ -1,0 +1,1 @@
+I practiced JavaScript by creating a form that changes input and button colors on submit. I also worked with objects (adding, deleting, and printing properties) and arrays (removing elements and replacing them with animal names).

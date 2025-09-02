@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome back</h1>
+      <h5>Welcome back! Please enter your details.</h5>
+      <div>
+        <label for="email">Email</label><br />
+        <input type="text" id="email" placeholder="Enter your email" required/><br />
+
+        <label for="Password">Password</label><br />
+        <input type="password" id="password" placeholder="Password" required/><br />
+
+        <label for="Username">Username</label><br />
+        <input type="text" id="username" placeholder="Username" required/>
+      </form>
+      <a href="#">Forgot password</a><br />
+      <button type="button" id="submitBtn">Submit</button>
+      <p>Don't have an account? <a href="#">Sign up for free</a></p>
+    </div>
+  </body>
+  <script>
+    let button = document.getElementById("submitBtn");
+    let form = document.getElementsByClassName("container")[0];
+
+    button.addEventListener("click", () => {
+      let inputs = form.querySelectorAll("input");
+
+      inputs.forEach((input) => {
+        input.style.border = "1px solid blue";
+      });
+
+      button.style.backgroundColor = "green";
+
+      // get input values
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+      let email = document.getElementById("email").value;
+
+      console.log("my username is:", username);
+      console.log("my password is:", password);
+      console.log("my email is:", email);
+    });
+  </script>
+</html>
